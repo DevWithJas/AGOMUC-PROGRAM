@@ -1,7 +1,7 @@
 import MiniHeading from "./MiniHeading";
 import Title from "./Title";
 import MetricsDashboard from "./example";
-import SampleCard from "./sampleCard";
+import SampleCard from "./sampleCard.jsx";
 
 const Vision = () => {
     return (
