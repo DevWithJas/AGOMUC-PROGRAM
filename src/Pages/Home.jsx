@@ -24,7 +24,7 @@ const Home = () => {
                     <section id="vision">
                         <Vision />
                     </section>
-                    <section id="progress" className="hidden sm:block">
+                    <section id="progress">
                         <Progress />
                     </section>
                     <Achievement />
