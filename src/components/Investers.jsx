@@ -1,7 +1,7 @@
 import { sampleData } from "../Data/Data";
 import MetricsDashboard from "./example";
 import MiniHeading from "./MiniHeading";
-import SampleCard from "./sampleCard.jsx";
+import SampleCard from "./SampleCard";
 import Title from "./Title";
 
 const Investers = () => {
