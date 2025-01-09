@@ -5,7 +5,7 @@ import { SampleCard } from "./sampleCard";
 
 const Vision = () => {
     return (
-        <section className=" flex flex-col gap-8">
+        <section className="flex flex-col gap-8">
             <Title
                 title="Vision"
                 des="Lorem ipsum dolor sit, amet consectetur"
