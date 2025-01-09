@@ -9,33 +9,32 @@ import Vision from "../components/Vision";
 import Investers from "../components/Investers";
 import Carieer from "../components/Carieer";
 const Home = () => {
-  return (
-    <div className="">
-      <Navbar />
-      <section className="text-white sm:mx-[200px] font-inter">
-        <div className=" flex flex-col gap-10">
-          <Hero />
-          <section id="about">
-            <About />
-          </section>
-          <section id="solution">
-            <Solutions />
-          </section>
-          <section id="vision">
-            <Vision />
-          </section>
-          <div className="hidden sm:block">
-            <Progress />
-          </div>
-          <Achievement />
-          <Investers />
-
-          <Carieer />
+    return (
+        <div className="">
+            <Navbar />
+            <section className="text-white sm:mx-[200px] font-inter">
+                <div className=" flex flex-col gap-10">
+                    <Hero />
+                    <section id="about">
+                        <About />
+                    </section>
+                    <section id="solution">
+                        <Solutions />
+                    </section>
+                    <section id="vision">
+                        <Vision />
+                    </section>
+                    <section id="progress" className="hidden sm:block">
+                        <Progress />
+                    </section>
+                    <Achievement />
+                    <Investers />
+                    <Carieer />
+                </div>
+            </section>
+            <Footer />
         </div>
-      </section>
-      <Footer />
-    </div>
-  );
+    );
 };
 
 export default Home;
