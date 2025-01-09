@@ -1,3 +1,8 @@
+import {
+    VerticalTimeline,
+    VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 import Title from "./Title";
 
 const Progress = () => {
@@ -43,46 +48,27 @@ const Progress = () => {
     ];
 
     return (
-        <section className=" flex flex-col gap-8">
+        <section className="flex flex-col gap-8">
             <Title
                 title="Progress"
                 des="Lorem ipsum dolor sit, amet consectetur"
             />
-
-            <div className="w-full  mx-auto p-10">
-                <div className="relative pt-16">
-                    {/* Horizontal dotted line */}
-                    <div className="absolute top-0 left-0 w-full flex items-center justify-center">
-                        <div className="w-full border-t-2 border-dotted border-white"></div>
-                    </div>
-
-                    {/* Timeline points */}
-                    <div className="relative flex justify-between">
-                        {timelineData.map((item, index) => (
-                            <div
-                                key={item.id}
-                                className="relative flex flex-col items-center"
-                            >
-                                {/* Vertical dotted line */}
-                                <div className="absolute -top-16 h-16 border-l-2 border-dotted border-white"></div>
-
-                                {/* Circle point */}
-                                <div className="w-4 h-4 bg-blue-600 border-2 border-blue-600 rounded-full -mt-2 z-10"></div>
-
-                                {/* Year and description */}
-                                <div className="mt-8 w-48">
-                                    <h2 className="text-3xl font-bold text-center mb-4">
-                                        {item.year}
-                                    </h2>
-                                    <p className="text-center opacity-75 text-sm">
-                                        {item.description}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
+            <VerticalTimeline>
+                {timelineData.map((item) => (
+                    <VerticalTimelineElement
+                        key={item.id}
+                        contentStyle={{ background: "#1e293b", color: "#fff" }}
+                        contentArrowStyle={{ borderRight: "7px solid #1e293b" }}
+                        date={item.year}
+                        iconStyle={{ background: "#2563eb", color: "#fff" }}
+                    >
+                        <h3 className="vertical-timeline-element-title text-xl font-bold">
+                            {item.year}
+                        </h3>
+                        <p className="opacity-75 text-sm">{item.description}</p>
+                    </VerticalTimelineElement>
+                ))}
+            </VerticalTimeline>
         </section>
     );
 };
