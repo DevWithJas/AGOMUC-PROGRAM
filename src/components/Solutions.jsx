@@ -8,7 +8,10 @@ const Solutions = () => {
       <div className=" flex md:flex-row flex-col justify-center gap-8 items-center  p-2  ">
         <div className="p-4 md:w-[30%] flex flex-col gap-3 bg-zinc-950 border border-zinc-700 rounded-xl">
           <video autoPlay muted className="rounded-md" width="900" loop>
-            <source src="videos/inteapp.mp4" type="video/mp4" />
+            <source
+              src="https://res.cloudinary.com/dudpthrrk/video/upload/v1736514562/AGOMUC/rby8caefwjhriohvkfdp.mp4"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
           <h1 className=" text-2xl font-semibold">Sentinel</h1>
@@ -27,7 +30,10 @@ const Solutions = () => {
         </div>
         <div className="p-4 md:w-[30%] flex flex-col gap-3 bg-zinc-950 border border-zinc-700 rounded-xl">
           <video autoPlay muted className="rounded-md" width="900" loop>
-            <source src="videos/servi.mp4" type="video/mp4" />
+            <source
+              src="https://res.cloudinary.com/dudpthrrk/video/upload/v1736514588/AGOMUC/gfvjy5m4a5c5xuqevxhf.mp4"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
           <h1 className=" text-2xl font-semibold">Arsenal</h1>

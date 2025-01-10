@@ -37,7 +37,10 @@ const About = () => {
         <div className=" flex md:flex-row flex-col items-center gap-4">
           <div className="md:w-[40%] backdrop-blur-sm rounded-xl p-2">
             <video autoPlay muted className="rounded-md" width="900" loop>
-              <source src="videos/aboutus.mp4" type="video/mp4" />
+              <source
+                src="https://res.cloudinary.com/dudpthrrk/video/upload/v1736514555/AGOMUC/m04pjbdq8xxlzys9tawx.mp4"
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
           </div>
